@@ -5,9 +5,15 @@
 export function convertirABinario(n: number): string {}
 */
 function convertirABinario(n:number):string{
-let binario:string;
-let ceroOuno:number;
+let binario,binarioInv:string;
 binario="";
+binarioInv="";
+if (n==0) {
+         binario="0";
+        }
+if (n==1) {
+         binario="1";
+          }
 while (n>=2) {
        console.log(binario,n);
        binario=binario+(n % 2);
@@ -18,8 +24,11 @@ while (n>=2) {
               else if (n==0) { 
                               binario=binario+0;
                              }
-}                              
-return binario;
+}             
+for (let indice = binario.length-1; indice>=0; indice=indice-1) {
+        binarioInv=binarioInv + binario[indice];
+}
+return binarioInv;
 }
 
-console.log(convertirABinario(255));
+console.log(convertirABinario(2));

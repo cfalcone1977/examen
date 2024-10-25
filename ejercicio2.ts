@@ -22,10 +22,11 @@ if (n>1) {
                                 } 
             contador=contador+1;   
             }     
-    }
-console.log(divisor);
+    } else if (n==1) {
+                      primo=true;
+                     }
 return primo;
 }
 
 
-console.log(esPrimo(7));
+console.log(esPrimo(17));
