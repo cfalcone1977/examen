@@ -5,7 +5,7 @@
 export function multiplicarMatriz(matriz: number[][]): number {}
 */
 
-function multiplicarMatriz(matriz:number[][]):number{
+export function multiplicarMatriz(matriz:number[][]):number{
 let mult:number;
 mult=1;
 for (let x = 0; x < matriz.length; x=x+1) 
@@ -19,6 +19,4 @@ return mult;
 }
 
 
-let matrizGenerica:number[][];
-matrizGenerica=[[1,2],[3,4]];
-console.log(multiplicarMatriz(matrizGenerica));
+console.log(multiplicarMatriz([[1,2],[3,4]]));

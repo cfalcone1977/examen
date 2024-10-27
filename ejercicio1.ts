@@ -13,7 +13,7 @@ export function clasificarEdades(n: number[]): number[] {}*/
 
 //asumimos que n es un arreglo donde se deben crear las edades de las 270 personas dentro del local.
 //y asumimos que esto se realiza dentro de la funcion. 
-function clasificarEdades(n:number[]): number[]{
+export function clasificarEdades(n:number[]): number[]{
 let personas:number[]=new Array(2);
 personas[0]=0;
 personas[1]=0;
@@ -27,5 +27,3 @@ for (let indice = 0; indice < 270; indice=indice+1) {
 }
 return personas;
 }
-
-console.log(clasificarEdades([]));

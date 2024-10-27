@@ -11,7 +11,7 @@ Algoritmo de Euclides:
    a = b
    hasta que b=0; 
 */
-function mcd(a:number, b:number): number {
+export function mcd(a:number, b:number): number {
   let maxCdiv,resto:number;
   maxCdiv=0;
   while (b != 0) {
@@ -23,4 +23,4 @@ function mcd(a:number, b:number): number {
   return maxCdiv;
 }
 
-console.log(mcd(10,4));
+

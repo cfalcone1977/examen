@@ -5,7 +5,7 @@
 export function promedioArreglo(arr: number[]): number {}
 */
 
-function promedioAreglo(arr:number[]):number{
+export function promedioAreglo(arr:number[]):number{
  let promedio:number;
  let acumulador:number;
 promedio=0;
@@ -17,4 +17,3 @@ promedio=acumulador/arr.length;
 return promedio;
 }
 
-console.log(promedioAreglo([0,1,2]));

@@ -4,7 +4,7 @@
 export function sumaDigitos(n: number): number {}
 */
 
-function sumaDigitos(n:number):number{
+export function sumaDigitos(n:number):number{
  let suma:number
  let numerosTexto:string;
  suma=0;
@@ -16,4 +16,3 @@ function sumaDigitos(n:number):number{
  return suma;
 }
 
-console.log(sumaDigitos(1500));

@@ -2,7 +2,7 @@
 // Ejemplo: "hola" -> "aloh"
 //export function invertirCadena(cadena: string): string {}
 
-function invertirCadena(cadena:string): string{
+export function invertirCadena(cadena:string): string{
 let invertir:string;
 let largoCadena,indice:number;
 largoCadena = cadena.length-1;
@@ -12,4 +12,3 @@ for (indice = largoCadena; indice>=0; indice=indice-1) {
 }
 return invertir;
 }
-console.log(invertirCadena("hola mundo"));

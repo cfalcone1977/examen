@@ -4,7 +4,7 @@
 // Ejemplo: 255 >> "11111111"
 export function convertirABinario(n: number): string {}
 */
-function convertirABinario(n:number):string{
+export function convertirABinario(n:number):string{
 let binario,binarioInv:string;
 binario="";
 binarioInv="";
@@ -15,7 +15,7 @@ if (n==1) {
          binario="1";
           }
 while (n>=2) {
-       console.log(binario,n);
+       //console.log(binario,n);
        binario=binario+(n % 2);
        n=Math.floor(n/2);
        if (n==1) {
@@ -31,4 +31,4 @@ for (let indice = binario.length-1; indice>=0; indice=indice-1) {
 return binarioInv;
 }
 
-console.log(convertirABinario(2));
+

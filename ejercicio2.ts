@@ -4,7 +4,7 @@
 // 10 >> false
 //export function esPrimo(n: number): boolean {}
 
-function esPrimo(n:number):boolean {
+export function esPrimo(n:number):boolean {
 let primo:boolean;
 let divisor,contador:number;
 primo=false;
@@ -27,6 +27,3 @@ if (n>1) {
                      }
 return primo;
 }
-
-
-console.log(esPrimo(17));

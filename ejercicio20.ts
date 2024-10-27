@@ -12,7 +12,7 @@ export function esPangrama(cadena: string): boolean {}
 //la cadena que se recibe como parametro e ir encontrando y contando la cantidad de coincidencias
 // si las coincidencias son la cantidad de letras del alfabeto es PANGRAMA!!.
 
-function esPangrama(cadena:string):boolean{
+export function esPangrama(cadena:string):boolean{
  let pangrama:boolean;
  let alfabeto:String;
  let indice2,contador:number;
@@ -34,10 +34,9 @@ function esPangrama(cadena:string):boolean{
                   }
                }     
  }
- console.log(contador);
+ //console.log(contador);
  if (contador==27) {
                    pangrama=true;
                   }
  return pangrama;
 }
-console.log(esPangrama("aeiouW"));

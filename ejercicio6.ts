@@ -4,11 +4,10 @@
 export function celsiusAFahrenheit(celsius: number): number {}
 */
 
-function celciusAFahrenheit(celcius:number):number{
+export function celciusAFahrenheit(celcius:number):number{
    let fahrenheit:number;
 fahrenheit=(celcius*(9/5))+32;
 return fahrenheit;
 }
 
 
-console.log(celciusAFahrenheit(30));

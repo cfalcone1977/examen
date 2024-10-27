@@ -5,7 +5,7 @@
 export function calcularMediana(arr: number[]): number {}
 */
 
-function calcularMediana(arr:number[]):number{
+export function calcularMediana(arr:number[]):number{
 let media, acumulador:number;
 media=0;
 acumulador=0;
@@ -16,4 +16,4 @@ media=acumulador/arr.length;
 return media;
 }
 
-console.log(calcularMediana([100,2,3,4,5]));
+

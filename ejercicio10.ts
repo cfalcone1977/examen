@@ -5,7 +5,7 @@
 export function eliminarDuplicados(arr: number[]): number[] {}
 */
 
-function eliminarDuplicados(arr: number[]):number[]{
+export function eliminarDuplicados(arr: number[]):number[]{
  let elemento:number;
  for (let indice = 0; indice < arr.length; indice=indice+1) {
          elemento=arr[indice];
@@ -23,4 +23,3 @@ function eliminarDuplicados(arr: number[]):number[]{
 return arr;
 }
 
-console.log(eliminarDuplicados([4,4,4,4,4,1,1,1,2,1,1,1,3,1,1,1,5,1,1,5,5,5,5,5,5,55,3]));

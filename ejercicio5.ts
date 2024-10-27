@@ -1,5 +1,5 @@
 
-function esPalindromo(palabra:string):boolean{
+export function esPalindromo(palabra:string):boolean{
 let isPal:boolean;
 let invertir:string;
 let indice:number;
@@ -19,4 +19,3 @@ while ((indice<=(palabra.length-1))&&(isPal))  {
 return isPal;
 }
 
-console.log(esPalindromo("anilina"));

@@ -4,7 +4,7 @@ export function filtrarPares(arr: number[]): number[] {}
 */
 
 
-function filtrarPares(arr:number[]):number[]{
+export function filtrarPares(arr:number[]):number[]{
  let pares:number[]=new Array();
  for (let indice = 0; indice < arr.length; indice=indice+1) {
        if ((arr[indice] % 2)==0){
@@ -14,6 +14,3 @@ function filtrarPares(arr:number[]):number[]{
      }
 return pares;
 }
-
-let numeros:number[]=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
-console.log(filtrarPares(numeros));

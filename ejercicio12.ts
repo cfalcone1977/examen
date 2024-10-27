@@ -6,7 +6,7 @@ export function contarPalabras(frase: string): number {}
 */
 
 //se asume que las palabras estan separadas unicamente por un espacio " "
-function contarPalabras(frase:string):number{
+export function contarPalabras(frase:string):number{
  let cantPalabras:number;
  let arregloFrase:string[];
  cantPalabras=0;
@@ -22,4 +22,3 @@ function contarPalabras(frase:string):number{
  return cantPalabras;
 }
 
-console.log(contarPalabras("hola mundo.     Yo soy  de   Ford casa Juan"));

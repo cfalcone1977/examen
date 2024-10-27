@@ -4,7 +4,7 @@
 export function factorial(n: number): number {}
 */
 
-function factorial(n:number):number{
+export function factorial(n:number):number{
   let fac:number;
 fac=1;
 for (let indice = 1; indice <= n; indice=indice+1) 
@@ -16,4 +16,3 @@ return fac;
 }
 
 
-console.log(factorial(1));

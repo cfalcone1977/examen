@@ -7,7 +7,7 @@
 export function validarTarjeta(numero: string): boolean {}
 */
 
-function validarTarjeta(numero:string):boolean{
+export function validarTarjeta(numero:string):boolean{
  let valida:boolean;
  let invertido:number[]=new Array();
  let acumulador:number;
@@ -18,7 +18,7 @@ function validarTarjeta(numero:string):boolean{
  for (let indice = numero.length-1; indice >= 0; indice=indice-1) {
           invertido.push(Number(numero.charAt(indice)));
  }
- console.log(invertido);
+ //console.log(invertido);
  for (let indice = 0; indice < invertido.length; indice=indice+1) {
     //chequeo los indices impares del arreglo para duplicar su valor, pero los que tienen 2 digitos
     // sumo sus digitos directamente.
@@ -62,11 +62,10 @@ function validarTarjeta(numero:string):boolean{
  //acumulo la suma de los elementos del arreglo.
  acumulador=acumulador + invertido[indice];  
 }
- console.log(invertido);
- console.log(acumulador);
+ //console.log(invertido);
+ //console.log(acumulador);
  //determino si es multiplo de 10
  valida=((acumulador % 10)==0);
  return valida;
 }
 
-console.log(validarTarjeta("4660570119649098"));

@@ -8,7 +8,7 @@
 export function esNumeroPerfecto(n: number): boolean {}
 */
 
-function esNumeroPerfecto(n:number):boolean {
+export function esNumeroPerfecto(n:number):boolean {
 let perfecto:boolean;
 let suma:number;
 perfecto=false;
@@ -27,4 +27,3 @@ if ((n==suma) && (n>1)) {
 return perfecto;
 }
 
-console.log(esNumeroPerfecto(6));
